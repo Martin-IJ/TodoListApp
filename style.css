@@ -1,5 +1,6 @@
 :root{
     --dark: #374151;
+    --lightDark: #4e596a;
     --darker: #1f2937;
     --darkest: #111827;
     --gray: #6b7280;
@@ -21,8 +22,8 @@ html {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: var(--dark);
   color: var(--light);
+  background-color: var(--dark);
 }
 
 header, main{
@@ -68,7 +69,7 @@ input, button{
     margin-right: 1rem;
     color: var(--light);
     font-size: 1.25rem;
-    box-shadow: 2px 2px 8px var(--gray);
+    box-shadow: 2px 2px 8px var(--darker);
 }
 
 #newTaskInput::placeholder{
@@ -101,6 +102,15 @@ input, button{
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+#tasks{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--darker);
+    padding: 20px 5px 5px 5px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 15px var(--darker);
 }
 
 .text, .content{
